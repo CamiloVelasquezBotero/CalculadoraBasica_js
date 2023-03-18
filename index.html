@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+	<div class="contenedor"> <!--Se crea un contenedor que contenga el formulario dentro para obtener los datos-->
+		<form>
+			<input type="text" id="numero1"> <!--Se crea el input para ingresar el numero, y se le agrega el (id) para llamarlo desde JS-->
+			<p>+</p>
+			<input type="text" id="numero2">
+			<p>=</p>
+			<input type="text" id="resultado" readonly> <!--(id) para llamarlo desde Js, (readonly) para que sea solo el lectura y el usuario no pueda modificarlo-->
+			<input type="button" class="btn" onclick="suma()" value="Resultado"> <!--Se crea el boton, (value) es el texto que mostrara el boton-->
+		</form>
+	</div>
+
+	<script src="calculadora.js"></script> <!--Se enlaza con el archivo JS a lo ultimo para que primero cargue toda la pagina-->
+</body>
+</html>
